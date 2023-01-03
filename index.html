@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Styles/index.css" />
+    <title>My Portfoilio | Neeraj Kadian</title>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <div id="header">
+      <div class="container">
+        <!-- Navbar Section -->
+        <nav>
+          <h1>Neeraj Kadian</h1>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">Contact </a></li>
+            <li><a href="#">Resume</a></li>
+          </ul>
+        </nav>
+        <!-- Header Text Section -->
+        <div class="header-text">
+          <p>Java Backend Developer</p>
+          <h1>
+            Hi, I am <span>Neeraj</span> <br />
+            Kadian from Gurgaon
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Me Section -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="/fw21-0395.github.io/myimage/IMG_0442.JPG" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subt-title">About Me</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+              beatae earum, sint error odio molestiae quisquam architecto
+              molestias consequatur necessitatibus ex tenetur ut laborum omnis
+              voluptatem quasi saepe at! Esse, quam necessitatibus, iste itaque
+              placeat asperiores maxime molestias beatae quisquam, voluptatum
+              doloribus! Aperiam qui velit deleniti quae, adipisci commodi
+              consectetur?
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="openTab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>HTML</span> <br />Lorem ipsum dolor sit amet.</li>
+                <li><span>CSS</span> <br />Lorem ipsum dolor sit amet.</li>
+                <li><span>JavaScript</span> <br />Lorem ipsum dolor sit amet.</li>
+                <li><span>Java</span> <br />Lorem ipsum dolor sit amet.</li>
+                <li><span>SpringBoot</span> <br />Lorem ipsum dolor sit amet.</li>
+                <li><span>SQL</span> <br />Lorem ipsum dolor sit amet.</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Present</span> <br />Full Stack Devlopment <br />
+                  Masai School <br />
+                  Bangalore
+                </li>
+                <li>
+                  <span>2022</span> <br />
+                  Batchler of Technology in Electronics and Communication <br />
+                  DPG I.T.M College <br />
+                  Gurgaon
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  let tabLinks = document.getElementsByClassName("tab-links");
+  let tabContents = document.getElementsByClassName("tab-contents");
+
+  function openTab(tabName) {
+    for (tabLink of tabLinks) {
+      tabLink.classList.remove("active-link");
+    }
+
+    for (tabContent of tabContents) {
+      tabContent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabName).classList.add("active-tab");
+  }
+</script>
