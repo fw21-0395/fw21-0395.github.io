@@ -1,146 +1,212 @@
-*{
+body{
+
+    background-color: rgb(219, 219, 219);
+    color: rgb(0, 0, 0);
     margin: 0px;
     padding: 0px;
-    font-family:'Poppins', sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     box-sizing: border-box; 
 }
 
-body{
-    background-color: #080808;
-    color: white;
-}
-/* Header Section */
-#header{
-    width: 100%;
-    height: 100vh;
-    background-image: url(/fw21-0395.github.io/images/background.png);
-    background-size: cover;
-    background-position: center;
+#Container{
+
+    border: 2px solid red;
 }
 
-    .container{
-        padding: 10px 10%;
+    #Navbar {
+
+        /* border: 2px solid green; */
+        background-color: rgb(2, 2, 2);
+        color: white;
+        height: 50px;
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        justify-items:auto;
+
+        position: fixed;
+        top: 0;
+        width: 100%;
+        overflow:hidden;
+        /* background-color: white; */
     }
+        #Nav_Left{
 
-        /* Navbar Section */
-        nav{
-            display: flex;
+            /* border: 2px solid blue; */
+            width: 30%;
+            text-align: center;
+        }
+        #Nav_Right{
+
+            /* border: 2px solid rgb(57, 131, 0); */
+            width: 70%;
+            font-weight: 500px;
+            text-align: center;
+
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+        }
+        #Nav_Right p:hover{
+
+            color: brown;
+            cursor:pointer;
+        }
+
+    #Top{
+
+        /* border: 2px solid green; */
+        margin-top: 70px;
+        margin-bottom: 20px;
+
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        align-items: center;
+    }
+        #Top_Left{
+
+            font-size: 24px;
+            margin-left: 100px;
+
+        }
+        #Top_Left p{
+
+            margin-bottom: -25px;
+        }
+        #Top_Left span{
+
+            color: rgb(145, 10, 10);
+        }
+        #Top_Right {
+            
+            /* border: 2px solid greenyellow; */
+        }
+
+        #gif{
+
+            width: auto;
+            border-radius: 700px;
+        }
+
+    #Mid{
+        /* border: 2px solid green; */
+
+
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        align-items: center;
+
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+        #Mid_Left{
+            /* border: 2px solid blue; */
+            width: 50%;margin: auto;
+
+            
+        }
+            #Mid_Left > img{
+                width: 100%;
+                border-radius: 500px;
+            }
+        #Mid_Right{
+            width: 100%;
+            margin: auto;
+        }
+        #About_Me2{
+            /* border: 2px solid yellow; */
+
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            justify-content: center;
+        }
+            #education > div > span{
+
+                color: #cf2345;
+            }
+            #education > div > p {
+
+                line-height: 5px;
+
+            }
+    #Mid2{
+
+        /* border: 2px solid green; */
+        text-align: center;
+        width: 80%;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+        background-color: #EFEFEF;
+        border-radius: 200px;
+        padding: 10px;
+        
+    }
+        #Icons{
+
+            /* border: 2px solid yellow; */
+
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            justify-content: center;
             align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
         }
 
-            .logo{
-                width: 140px;
+            #Icons > img{
+
+                margin: auto;
+
+                width: 30%;
             }
 
-            nav ul li{
-                display: inline-block;
-                list-style: none;
-                margin: 10px 20px;
-            }
-
-            nav ul li a{
-                color: #fff;
-                text-decoration: none;
-                font-size: 18px ;
-                position: relative;
-            }
-
-            nav ul li a::after{
-                content: '';
-                width: 0;
-                height: 3px;
-                background-color: #ff004f ;
-                position: absolute;
-                left: 0;
-                bottom: -6px;
-                transition: 0.5s;
-            }
-
-            nav ul li a:hover::after{
-                width: 100%;
-            }
-
-         /* Header Text Section */
-        .header-text{
-            margin-top: 20%;
-            font-size: 30px;
-        }
-
-            .header-text h1{
-                font-size: 60px;
-                margin-top: 20px ;
-            }
-
-                .header-text h1 span{
-
-                    color: #ff004f;
-                }
-
-/* About Me Section */
-#about{
-    padding: 80px 0;
-    color: #ababab;
-}
-    .row{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+    #Projects{
+        /* border: 2px solid green; */
+        text-align: center;
+        width: 90%;
+        margin: auto;
     }
-        .about-col-1{
-            flex-basis: 35%;
+        .Project{
+
+            border: 2px solid blue;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            text-align: start;
+
+            border: 1px solid gray;
+            border-radius: 10px;
+            padding: 20px;
         }
-            .about-col-1 img{
+        .Project  div {
+            /* border: 2px solid yellow; */
+            padding: 10px;
+
+        }
+            .Project > div img{
+
                 width: 100%;
-                border-radius: 15px;
+                border-radius: 10px;
+            }
+            .Project > div button{
+
+                width: 30%;
+                margin: auto;
+                padding: 10px;
+                border-radius: 20px;
+                border: 1px solid black;
+                background-color: black;
+                color: white;
+
+            }
+            .Project > div button:hover{
+
+                cursor: pointer;
+                color: black;
+                background-color: gray;
             }
 
-        .about-col-2{
-            flex-basis: 60%;
-        }
-            .subt-title{
-                font-size: 60px;
-                font-weight: 600;
-                color: #ababab;
-            }
 
-            .tab-titles{
-                display: flex;
-                margin: 20px 0 40px ;
-            }
-                .tab-links{
-                    margin-right: 50px;
-                    font-size: 18px;
-                    font-weight: 500;
-                    cursor: pointer;
-                    position: relative;
-                }
-                .tab-links::after{
-                    content: '';
-                    width: 0;
-                    height: 3px;
-                    background: #ff004f;
-                    position: absolute;
-                    left: 0;
-                    bottom: -8px;
-                    transition: 0.5s;
-                }
-                .tab-links.active-link::after{
-                    width: 50%;
-                }
-            .tab-contents ul li{
-                list-style: none ;
-                margin: 10px 0;
-            }
-                .tab-contents ul li span{
-                    color: #950130;
-                    font-size: 14px;
-                }
-            .tab-contents{
-                display: none;
-            }
 
-            .tab-contents.active-tab{
-                display: block;
-            }

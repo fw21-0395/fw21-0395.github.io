@@ -5,108 +5,192 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./Styles/index.css" />
-    <title>My Portfoilio | Neeraj Kadian</title>
+    <title>Neeraj Kadian</title>
   </head>
   <body>
-    <!-- Header Section -->
-    <div id="header">
-      <div class="container">
-        <!-- Navbar Section -->
-        <nav>
-          <h1>Neeraj Kadian</h1>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Project</a></li>
-            <li><a href="#">Contact </a></li>
-            <li><a href="#">Resume</a></li>
-          </ul>
-        </nav>
-        <!-- Header Text Section -->
-        <div class="header-text">
-          <p>Java Backend Developer</p>
-          <h1>
-            Hi, I am <span>Neeraj</span> <br />
-            Kadian from Gurgaon
-          </h1>
+    <!-- Main Container -->
+    <div id="Container">
+
+        <div id="home"></div>
+      <!-- NavBar Section -->
+      <div id="Navbar">
+
+        <!-- Navbar Left Section -->
+        <div id="Nav_Left">
+            <h3>Neeraj Kadian</h3>
         </div>
-      </div>
-    </div>
 
-    <!-- About Me Section -->
-    <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="/fw21-0395.github.io/myimage/IMG_0442.JPG" />
-          </div>
-          <div class="about-col-2">
-            <h1 class="subt-title">About Me</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-              beatae earum, sint error odio molestiae quisquam architecto
-              molestias consequatur necessitatibus ex tenetur ut laborum omnis
-              voluptatem quasi saepe at! Esse, quam necessitatibus, iste itaque
-              placeat asperiores maxime molestias beatae quisquam, voluptatum
-              doloribus! Aperiam qui velit deleniti quae, adipisci commodi
-              consectetur?
-            </p>
-
-            <div class="tab-titles">
-              <p class="tab-links active-link" onclick="openTab('skills')">
-                Skills
-              </p>
-              <p class="tab-links" onclick="openTab('education')">Education</p>
-            </div>
-
-            <div class="tab-contents active-tab" id="skills">
-              <ul>
-                <li><span>HTML</span> <br />Lorem ipsum dolor sit amet.</li>
-                <li><span>CSS</span> <br />Lorem ipsum dolor sit amet.</li>
-                <li><span>JavaScript</span> <br />Lorem ipsum dolor sit amet.</li>
-                <li><span>Java</span> <br />Lorem ipsum dolor sit amet.</li>
-                <li><span>SpringBoot</span> <br />Lorem ipsum dolor sit amet.</li>
-                <li><span>SQL</span> <br />Lorem ipsum dolor sit amet.</li>
-              </ul>
-            </div>
-
-            <div class="tab-contents" id="education">
-              <ul>
-                <li>
-                  <span>Present</span> <br />Full Stack Devlopment <br />
-                  Masai School <br />
-                  Bangalore
-                </li>
-                <li>
-                  <span>2022</span> <br />
-                  Batchler of Technology in Electronics and Communication <br />
-                  DPG I.T.M College <br />
-                  Gurgaon
-                  
-                </li>
-              </ul>
-            </div>
-          </div>
+        <!-- Navbar right Section -->
+        <div id="Nav_Right">
+            <p onclick="location.href = '#home'" >Home</p>
+            <p onclick="location.href = '#aboutMeClick'">About Me</p>
+            <p onclick="location.href = '#skillClick'">Skills</p>
+            <p onclick="location.href = '#ProjectClick'">Project</p>
+            <p>Contact</p>
+            <p>Resume</p>
         </div>
+
       </div>
+
+      <!-- Top Section -->
+      <div id="Top">
+
+        <!-- Top Left Section -->
+        <div id="Top_Left">
+            <p>Java Backend Developer</p>
+            <h1>
+                Hi, I am <span>Neeraj</span> <br />
+                Kadian from Gurgaon
+            </h1>
+        </div>
+
+        <!-- Top Right Section -->
+        <div id="Top_Right">
+            <img id="gif" src="https://camo.githubusercontent.com/8bf6f6d78abc81fcf9c49f10649423e73ea44bc248e83aaae8759d401c829a84/68747470733a2f2f70687973696373677572756b756c2e66696c65732e776f726470726573732e636f6d2f323031392f30322f6368617261637465722d312e676966" alt="">
+        </div>
+        <div id="aboutMeClick"></div>
+
+      </div>
+
+      
+      <!-- Mid Section -->
+      <div id="Mid">
+        <!-- About Me Section -->
+        <div id="Mid_Left">
+            <img src="./myimage/My Pic - Passport size.jpeg" alt="">
+        </div>
+
+        <div id="Mid_Right">
+            <div id="About_Me">
+                <h1>About Me</h1>
+                <p>A self-motivated, hard-working, and ambitious Java Backend Developer with proficiency in HTML, CSS, JavaScript, Java, and SpringBoot. Problem-solving mindset and the ability to perform well in collaboration. 1200+ hours of coding and hands-on experience developing 2 fully functional web applications. Looking forward to making a significant contribution to an organization through dedicated effort.</p>
+            </div>
+
+            <div id="About_Me2">
+               <div id="Skills">
+                <h1>Skills</h1>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JavaScript</p>
+                <p>Java</p>
+                <p>SpringBoot</p>
+                <p>MySQL</p>
+               </div>
+
+               <div id="education" >
+                <h1>Education</h1>
+
+                <div>
+                    <span>Present</span>
+                    <p>Full Stack Devlopment</p>
+                    <p>Masai School</p>
+                    <p>Bangalore</p>
+                </div>
+
+                <div>
+                    <span>Aug 2016 - May 2022</span>
+                    <p>Batchler of Technology</p>
+                    <p>in Electronics and Communication</p>
+                    <p>DPG I.T.M College</p>
+                    <p>Gurgaon</p>
+                </div>
+
+               </div>
+            </div>
+
+        </div>
+        <div id="skillClick"></div>
+      </div>
+
+      
+      <!-- Mid Section 2 -->
+      <div id="Mid2">
+        <h1>Tech Stacks</h1>
+
+        <div id="Icons">
+            <img src="./Icons/pngegg.png" alt="">
+            <img src="./Icons/pngegg (2).png" alt="">
+            <img src="./Icons/pngegg (1).png" alt="">
+            <img src="./Icons/pngegg (5).png" alt="">
+            <img src="./Icons/53-535670_spring-png.png" alt="">
+            <img src="./Icons/pngegg (3).png" alt="">
+            <img src="./Icons/pngegg (4).png" alt="">
+            <img src="./Icons/pngegg ( 6 ).png" alt="">
+        </div>
+
+        <div id="ProjectClick"></div>
+      </div>
+
+
+      <!-- Bottom Section -->
+      <div id="Bottom">
+
+        <!-- Project Section -->
+        <div id="Projects">
+            <h1>Projects</h1>
+
+            <div class="Project">
+                
+                <div>
+                    <img src="./Projects/Ssense.com.png" alt="">
+                    <button>GitHub</button>
+                    <button>Go Live</button>
+                </div>
+                <div>
+                    <h2>Ssense.com || Clone</h2>
+                    <p>E-Commerce website that deals with products like bags, clothes, accessories, etc.</p>
+                    <h4>Tech-Stack:</h4>
+                    <p> HTML, CSS and JavaScript. </p>
+                    <h4>Features:</h4>
+                    <ul>
+                        <li>Signup and log in.</li>
+                        <li>Sort by price, trend, colors, etc.</li>
+                        <li>Cart, wishlist, remove, payment.</li>
+                        <li>Built the website's landing page with a navbar and footer.</li>
+                        <li>Developed a product page with features like filter, sort, add to cart, remove, etc.</li>
+                        <li>Built the signup and login sections.</li>
+                        <li>Built the cart and wishlist page with all features.</li>
+                    </ul>
+                    <h4>It was an solo project and completed it in 4 days.</h4>
+
+                </div>
+
+            </div>
+
+            <div class="Project">
+                
+                <div>
+                    <h2>Bath & Bodyworks : Clone</h2>
+                    <p>Bathandbodywroks is an e-commerce website for bath and body care products.</p>
+                    <h4>Tech-Stack:</h4>
+                    <p> HTML, CSS, JavaScript and Heroku Server. </p>
+                    <h4>Features:</h4>
+                    <ul>
+                        <li>Signup and log in.</li>
+                        <li>Secured admin panel to see site stats.</li>
+                        <li>Data fetching from the server.</li>
+                        <li>Filter by categories.</li>
+                        <li>Sort by price.</li>
+                        <li>Cart and wishlist.</li>
+                        <li>Add, remove, and update products.</li>
+                    </ul>
+                    <h4>It was an collaborative project and completed it in 5 days.</h4>
+
+                </div>
+
+                <div>
+                    <img src="./Projects/BathandBodyWorks.png" alt="">
+                    <button>GitHub</button>
+                    <button>Go Live</button>
+                </div>
+
+            </div>
+        </div>
+        
+      </div>
+
+      <!-- Footer Section -->
+      <div></div>
     </div>
   </body>
 </html>
-
-<script>
-  let tabLinks = document.getElementsByClassName("tab-links");
-  let tabContents = document.getElementsByClassName("tab-contents");
-
-  function openTab(tabName) {
-    for (tabLink of tabLinks) {
-      tabLink.classList.remove("active-link");
-    }
-
-    for (tabContent of tabContents) {
-      tabContent.classList.remove("active-tab");
-    }
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(tabName).classList.add("active-tab");
-  }
-</script>
