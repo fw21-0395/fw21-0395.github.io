@@ -90,6 +90,7 @@ a{
         #Top_Right {
             
             /* border: 2px solid greenyellow; */
+            padding-right: 30px;
         }
 
         #gif{
