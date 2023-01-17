@@ -52,6 +52,10 @@ a{
             display: grid;
             grid-template-columns: repeat(6,1fr);
         }
+        #Nav_Right a{
+            color: white;
+            text-decoration: none;
+        }
         #Nav_Right p:hover{
 
             color: brown;
