@@ -8,9 +8,13 @@ body{
     box-sizing: border-box; 
 }
 
+a{
+    color: black;
+}
+
 #Container{
 
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
     #Navbar {
@@ -207,6 +211,76 @@ body{
                 color: black;
                 background-color: gray;
             }
+    #Git{
+
+        /* border: 2px solid green; */
+        text-align: center;
+        margin-top: 50px;
+    }
+        #Status{
+            
+            /* border: 2px solid yellow; */
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            justify-content: center;
+            align-items: center;
+            width: 60%;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+        #Calender{
+
+            /* border: 2px solid yellow; */
+            background-color: white;
+            width: 70%;
+            margin: auto;
+            border-radius: 20px;
+            padding-top: 15px;
+
+        }
+
+    #ContactMe{
+        margin-top: 40px;
+        /* border: 2px solid green; */
+        text-align: center;
+        background-color: black;
+        color: white;
+        padding-top: 50px;
+
+        padding-bottom: 50px;
+
+    }
+
+        #mail a{
+            color: white;
+            text-decoration: none;
+        }
+        #ContactButtons{
+            /* border: 2px solid yellow; */
+
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            justify-content:space-evenly;
+            align-items: center;
+            width: 25%;
+            margin: auto;
+            padding-left: 40px;
+
+
+        }
+        #ContactMe button {
+
+            padding: 10px;
+            width: 100px;
+            border-radius: 50px;
+            border: 1px solid black;
+        }
+        #ContactMe button:hover{
+
+            background-color: gray;
+            cursor: pointer;
+        }
+        
 
 
 
